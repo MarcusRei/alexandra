@@ -1,0 +1,49 @@
+body {
+  margin: 0%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 25%;
+  border: 2px solid black;
+}
+
+article {
+  width: 100%;
+  background-color: blue;
+}
+
+header {
+  background-color: aqua;
+  height: 20vh;
+}
+
+main {
+  background-color: brown;
+  height: 60vh;
+}
+
+footer {
+  background-color: coral;
+  height: 20vh;
+}
