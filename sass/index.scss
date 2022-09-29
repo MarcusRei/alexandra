@@ -9,25 +9,41 @@ header {
   align-items: center;
   flex-direction: column;
   height: auto;
-}
 
-img {
-  width: 20%;
-}
+  img {
+    width: 20%;
+  }
 
-nav {
-  display: flex;
-  justify-content: center;
-}
+  nav {
+    display: flex;
+    justify-content: center;
+  }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-}
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
 
-li {
-  list-style-type: none;
+  li {
+    list-style-type: none;
+    border: 2px solid black;
+    padding: 0.5em;
+    border-radius: 10px;
+
+    li:hover {
+      cursor: pointer;
+    }
+  }
+
+  a {
+    text-decoration: none;
+
+    a:hover {
+      cursor: pointer;
+      color: green;
+    }
+  }
 }
 
 main {
@@ -38,6 +54,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  padding: 1em;
 }
 
 section {
@@ -54,6 +71,8 @@ article {
 
 footer {
   background-color: coral;
+  display: flex;
+  flex-direction: row;
 
   .img-container {
     display: flex;
@@ -67,5 +86,21 @@ footer {
 
   h2 {
     padding: 1em;
+  }
+
+  .kontakt-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+
+  article {
+    height: 5em;
   }
 }

@@ -10,24 +10,33 @@ header {
   flex-direction: column;
   height: auto;
 }
-
-img {
+header img {
   width: 20%;
 }
-
-nav {
+header nav {
   display: flex;
   justify-content: center;
 }
-
-ul {
+header ul {
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
-
-li {
+header li {
   list-style-type: none;
+  border: 2px solid black;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+header li li:hover {
+  cursor: pointer;
+}
+header a {
+  text-decoration: none;
+}
+header a a:hover {
+  cursor: pointer;
+  color: green;
 }
 
 main {
@@ -38,6 +47,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  padding: 1em;
 }
 
 section {
@@ -54,6 +64,8 @@ article {
 
 footer {
   background-color: coral;
+  display: flex;
+  flex-direction: row;
 }
 footer .img-container {
   display: flex;
@@ -65,6 +77,20 @@ footer .footer-img {
 }
 footer h2 {
   padding: 1em;
+}
+footer .kontakt-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+  article {
+    height: 5em;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
